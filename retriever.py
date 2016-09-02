@@ -91,46 +91,49 @@ class InterestObject:
         self.description = desc
         self.index = index
 
-query = input("Request: ")
-sentence = query.split(" ")
-similarwords = {"test":["tests","quiz","quizzes"]}
+def run():
+    query = input("Request: ")
+    sentence = query.split(" ")
+    similarwords = {"test":["tests","quiz","quizzes"]}
 
-keywords = ['all','and','from','through', 'to', 'with', 'without']
-interest = []
-
-
-for word in sentence:
-    length = len(sentence)
-    index = sentence.index(word)
-    if word.lower() in keywords:
-        if word.lower() == "all":
-            interest.append(InterestObject('all', index, sentence[index:]))
-            continue
-        if word.lower() == "and" and not index == length - 1:
-            interest.append(InterestObject('and', index, sentence[:index]+sentence[index+1:]
-            continue
-        if index < length - 1 and not index == 0:
-            interest.append(InterestObject(word.lower, index, (sentence[index-1],sentence[index+1])
-        
-        
+    keywords = ['all','and','from','through', 'to', 'with', 'without']
+    interest = []
 
 
-similaritydict = {s.name: max([str_ratio(w, a) for a in s.aliases for w in sentence]) for s in subjects}
+    for word in sentence:
+        length = len(sentence)
+        index = sentence.index(word)
+        if word.lower() in keywords:
+            if word.lower() == "all":
+                interest.append(InterestObject('all', index, sentence[index:]))
+                continue
+            if word.lower() == "and" and not index == length - 1:
+                interest.append(InterestObject('and', index, sentence[:index]+sentence[index+1:]
+                continue
+            if index < length - 1 and not index == 0:
+                interest.append(InterestObject(word.lower, index, (sentence[index-1],sentence[index+1])
+            
+            
 
-print("Similarity:")
-[print("\t" + a + ': ' + str(b)) for a,b in similaritydict.items()]
 
-for a,b in similaritydict.items():
-    if(b >= 0.7):
-        interest.append(InterestObject(a + " found in sentence", indexOf(a, sentence)))
+    similaritydict = {s.name: max([str_ratio(w, a) for a in s.aliases for w in sentence]) for s in subjects}
 
-print("Interests")
-[print("\t" + str(i.index) + ": " + i.description) for i in interest]
+    print("Similarity:")
+    [print("\t" + a + ': ' + str(b)) for a,b in similaritydict.items()]
 
-for n in interests:
-    if 'comma' in n.description.lower():
-    if 'all' in n.description.lower():
-    if 'and' in n.description.lower():
+    for a,b in similaritydict.items():
+        if(b >= 0.7):
+            interest.append(InterestObject(a + " found in sentence", indexOf(a, sentence)))
 
-#if __name__ == '__main__':
+    print("Interests")
+    [print("\t" + str(i.index) + ": " + i.description) for i in interest]
 
+    for n in interests:
+        if 'comma' in n.description.lower():
+        if 'all' in n.description.lower():
+        if 'and' in n.description.lower():
+
+if __name__ == '__main__':
+    run()
+
+			
