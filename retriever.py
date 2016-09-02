@@ -93,25 +93,16 @@ class InterestObject:
 
 query = input("Request: ")
 sentence = query.split(" ")
-keywords = ['all','and','from','through', 'to']
+similarwords = {"test":["tests","quiz","quizzes"]}
+
+keywords = ['all','and','from','through', 'to', 'with', 'without']
 interest = []
 
-if ',' in query:
-    interest.append(InterestObject("Comma in string", query.split('').index(',')))
-if 'all' in sentence:
-    interest.append(InterestObject("All keyword in string", sentence.index("all")))
-if 'and' in sentence:
-    interest.append(InterestObject("And keyword in string", sentence.index("and")))
-if 'from' in sentence:
-    interest.append(InterestObject("From keyword in string", sentence.index("from")))
-if 'through' in sentence:
-    interest.append(InterestObject("Through keyword in string", sentence.index("from")))
-if 'to' in sentence:
-    interest.append(InterestObject("To keyword in string", sentence.index("to")))
-if 'with' in sentence:
-    interest.append(InterestObject("With keyword found in string", sentence.index("with")))
-if 'without' in sentence:
-    interest.append(InterestObject("Without keyword found in string", sentence.index("without")))
+
+for word in sentence:
+    if word in keywords:
+        
+
 
 similaritydict = {s.name: max([str_ratio(w, a) for a in s.aliases for w in sentence]) for s in subjects}
 
