@@ -1,4 +1,30 @@
 {
+    "mu":{
+        "aliases":[
+            "mu"
+        ],
+        "tests":[
+
+        ]
+    },
+    "alpha":{
+        "aliases":[
+            "alpha",
+            "cool people"
+        ],
+        "tests":[
+            "Can anyone do something like what is shown below but with states and nationals?"
+        ]
+    },
+    "theta":{
+        "aliases":[
+            "theta",
+            "newbies"
+        ],
+        "tests":[
+
+        ]
+    },
     "calculus":{
         "aliases":[
             "calculus",
