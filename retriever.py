@@ -106,7 +106,7 @@ for word in sentence:
         if word.lower() == "all":
             interest.append(InterestObject('all', index, sentence[index:]))
             continue
-        if word.lower() == "and":
+        if word.lower() == "and" and not index == length - 1:
             interest.append(InterestObject('and', index, sentence[:index]+sentence[index+1:]
             continue
         if index < length - 1 and not index == 0:
