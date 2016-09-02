@@ -100,7 +100,18 @@ interest = []
 
 
 for word in sentence:
-    if word in keywords:
+    length = len(sentence)
+    index = sentence.index(word)
+    if word.lower() in keywords:
+        if word.lower() == "all":
+            interest.append(InterestObject('all', index, sentence[index:]))
+            continue
+        if word.lower() == "and":
+            interest.append(InterestObject('and', index, sentence[:index]+sentence[index+1:]
+            continue
+        if index < length - 1 and not index == 0:
+            interest.append(InterestObject(word.lower, index, (sentence[index-1],sentence[index+1])
+        
         
 
 
