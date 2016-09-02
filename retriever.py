@@ -104,6 +104,14 @@ if 'and' in sentence:
     interest.append(InterestObject("And keyword in string", sentence.index("and")))
 if 'from' in sentence:
     interest.append(InterestObject("From keyword in string", sentence.index("from")))
+if 'through' in sentence:
+    interest.append(InterestObject("Through keyword in string", sentence.index("from")))
+if 'to' in sentence:
+    interest.append(InterestObject("To keyword in string", sentence.index("to")))
+if 'with' in sentence:
+    interest.append(InterestObject("With keyword found in string", sentence.index("with")))
+if 'without' in sentence:
+    interest.append(InterestObject("Without keyword found in string", sentence.index("without")))
 
 similaritydict = {s.name: max([str_ratio(w, a) for a in s.aliases for w in sentence]) for s in subjects}
 
@@ -116,4 +124,9 @@ for a,b in similaritydict.items():
 
 print("Interests")
 [print("\t" + str(i.index) + ": " + i.description) for i in interest]
+
+for n in interests:
+    if 'comma' in n.description.lower():
+    if 'all' in n.description.lower():
+    if 'and' in n.description.lower():
 
