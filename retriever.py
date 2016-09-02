@@ -40,6 +40,13 @@ class Subject:
                 testfile = open(self.name + "/" + t.testname, "wb")
                 testfile.write(testdata)
                 testfile.close()
+                testdata.close()
+            if not os.path.isfile(self.name + "/" + t.solutionsname):
+                testdata = urllib.request.urlopen(t.solutions).read() if t.solutions != "" else b''
+                testfile = open(self.name + "/" + t.solutionsname, "wb")
+                testfile.write(testdata)
+                testfile.close()
+                testdata.close()
     def as_string(self):
         fdict = {"aliases": str(self.aliases), "name": str(self.name), "tests": str(len(self.tests))}
         return "{name}:\n\tAliases: {aliases}\n\tTests: {tests}".format(**fdict)
@@ -109,3 +116,4 @@ for a,b in similaritydict.items():
 
 print("Interests")
 [print("\t" + str(i.index) + ": " + i.description) for i in interest]
+
