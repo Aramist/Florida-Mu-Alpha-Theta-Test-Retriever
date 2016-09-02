@@ -132,3 +132,5 @@ for n in interests:
     if 'all' in n.description.lower():
     if 'and' in n.description.lower():
 
+#if __name__ == '__main__':
+
