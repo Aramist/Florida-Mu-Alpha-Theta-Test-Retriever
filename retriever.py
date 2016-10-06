@@ -1,10 +1,8 @@
 import json
 import urllib
-from urllib import request
 import os
-from os import path
 import difflib
-import re
+
 from PyPDF2 import PdfFileMerger as Merger
 
 class Test:
@@ -33,14 +31,17 @@ class Subject:
         self.tests = [Test(a) for a in data["tests"]]
         self.testdict = dict()
         for test in self.tests:
-            pass
+            if test.year in self.testdict.keys():
+                self.testdict[test.year].append(test)
+            else:
+                self.testdict[test.year] = [test]
         self.cache_tests()
     def cache_tests(self):
         print('Caching Tests (' + self.name + ')...')
         if not os.path.exists(self.name+"/"):
             os.makedirs(self.name + "/")
         for t in self.tests:
-            print('Attempting: ' + str(t.year) + ' ' + t.event)
+            #print('Attempting: ' + str(t.year) + ' ' + t.event)
             if (not os.path.isfile(self.name + "/" + t.testname)) and t.test != '':
                 testdata = urllib.request.urlopen(t.test).read()
                 testfile = open(self.name + "/" + t.testname, "wb")
@@ -87,7 +88,7 @@ def run_main():
         query = ' ' + input('query: ').strip()
         for s in subjects:
             query = replace_subject(query, s)
-        query = query.replace(' tests ', ' ').replace(' test ', ' ').replace(' from ', ' ').replace(' with ', ' ')
+        query = query.replace(' tests ', ' ').replace(' test ', ' ').replace(' from ', ' ').replace(' with ', ' ').replace(',', '')
         query = query.strip()
         if 'and' in query:
             query = query.split(' and ')
@@ -100,16 +101,17 @@ def run_main():
                 if ' ' + s.name + ' ' in subquery:
                     numbers = [int(i) for i in subquery.split() if i.isdigit()]
                     if len(numbers) == 0:
-                        print(s.name + ' no numbers, continuing')
+                        if ' all ' in subquery:
+                            print('All ' + s.name + 'tests requested')
                         continue
                     elif len(numbers) == 1:
                         #only one year
-                        print(s.name + ' one year requested')
+                        print(s.name + ' ' + str(numbers[0]))
                     elif len(numbers) == 2:
                         #range of years
-                        print(s.name + ' range of years requested')
+                        print(s.name + ' ' + str([year for year in range(min(numbers), max(numbers) + 1)]))
                     else:
-                        print(s.name + ' more than two numbers given, passing')
+                        print(s.name + ' ' + str([year for year in numbers]))
                         pass
 if __name__ == '__main__':
     run_main()
