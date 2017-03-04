@@ -1,9 +1,12 @@
 import json
-import urllib
 import os
 import difflib
+import time
+
+import requests
 
 from PyPDF2 import PdfFileMerger as Merger
+from PyPDF2 import PdfFileReader as Reader
 
 class Test:
     def __init__(self, data):
@@ -28,7 +31,7 @@ class Subject:
         self.rawdata = data
         self.name = data['aliases'][0]
         self.aliases = data["aliases"]#[1:len(data["aliases"])]
-        self.tests = [Test(a) for a in data["tests"]]
+        self.tests = [Test(a) for a in data["tests"] if a[3] != '']
         self.testdict = dict()
         for test in self.tests:
             if test.year in self.testdict.keys():
@@ -43,28 +46,32 @@ class Subject:
         for t in self.tests:
             #print('Attempting: ' + str(t.year) + ' ' + t.event)
             if (not os.path.isfile(self.name + "/" + t.testname)) and t.test != '':
-                testdata = urllib.request.urlopen(t.test).read()
+                testdata = requests.get(t.test).text.encode('utf-8')
                 testfile = open(self.name + "/" + t.testname, "wb")
                 testfile.write(testdata)
                 testfile.close()
             if (not os.path.isfile(self.name + "/" + t.solutionsname)) and t.solutions != '':
-                testdata = urllib.request.urlopen(t.solutions).read() if t.solutions != "" else b''
+                testdata = requests.get(t.solutions).text.encode('utf-8')
                 testfile = open(self.name + "/" + t.solutionsname, "wb")
                 testfile.write(testdata)
                 testfile.close()
-    def as_string(self):
+    def __repr__(self):
         fdict = {"aliases": str(self.aliases), "name": str(self.name), "tests": str(len(self.tests))}
         return "{name}:\n\tAliases: {aliases}\n\tTests: {tests}".format(**fdict)
-def merge_files(files, destination):
+def merge_files(files):
     if len(files) == 0:
         return None
     if len(files) == 1:
         return files[0]
     merger = Merger()
     for f in files:
-        merger.append(f)
-    merger.write(destination)
+        print(f)
+        with open(f, 'rb') as pdfreader:
+            merger.append(Reader(pdfreader))
+    file_name = 'output_tests/{}.pdf'.format(time.time() * 1000000)
+    merger.write(file_name)
     merger.close()
+    return file_name
 def str_ratio(s1,s2):
     return difflib.SequenceMatcher(a=s1.lower(),b=s2.lower()).ratio()
 def indexOf(s1,arr):
@@ -114,5 +121,7 @@ def run_main():
                         print(s.name + ' ' + str([year for year in numbers]))
                         pass
 if __name__ == '__main__':
-    run_main()
-			
+    with open('tests.json') as jsonfile:
+        jsonstuff = json.load(jsonfile)
+        precalc = Subject(jsonstuff['precalculus'])
+        merge_files([os.path.abspath(os.path.join('./precalculus/', t.testname)) for t in precalc.tests if t.year > 2008 and 'mar' in t.event])
