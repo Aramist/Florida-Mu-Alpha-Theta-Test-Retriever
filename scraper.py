@@ -7,7 +7,11 @@ def run():
     if PAGE.status_code != 200:
         raise Exception('Failed to grab page')
     soup = BeautifulSoup(PAGE.content, 'html.parser')
-    print(soup.find_all('li'))
+    links = list(soup.find_all('h2'))
+    for year_header in links:
+        year = list(year_header.children)[0].get('name')
+        top_level_tests = list(year_header.next_sibling.children)[0:4]
+        topic_tests = list(year_header.next_sibling.children)[4]
 
 if __name__ == '__main__':
     run()
