@@ -9,9 +9,11 @@ def run():
     soup = BeautifulSoup(PAGE.content, 'html.parser')
     links = list(soup.find_all('h2'))
     for year_header in links:
-        year = list(year_header.children)[0].get('name')
+        year = list(year_header.children)[0].get('name')[5:]
         top_level_tests = list(year_header.next_sibling.children)[0:4]
         topic_tests = list(year_header.next_sibling.children)[4]
+        for top_level in top_level_tests:
+            
 
 if __name__ == '__main__':
     run()
