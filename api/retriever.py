@@ -38,9 +38,9 @@ class JsonDecoder(object):
                     for test_block in subdata_year:
                         for test_type in decoded_types:
                             if test_block['type'] == test_type:
-                                tests_and_labels.append((test_block['test'], '{} {} {} {}'.format(event, year, division, test_type)))
+                                tests_and_labels.append((test_block['test'], '{}@{}@{}@{}'.format(event, year, division, test_type)))
                                 if solutions:
-                                    tests_and_labels.append((test_block['solutions'], '{} {} {} {}'.format(event, year, division, test_type)))
+                                    tests_and_labels.append((test_block['solutions'], '{}@{}@{}@{}'.format(event, year, division, test_type)))
 
     def string_similarity(self, string_a, string_b):
         '''
