@@ -130,63 +130,316 @@
             "2015":[
                 {
                     "type":"individual",
-                    "test":"",
-                    "solutions":""
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
                     "type":"ciphering",
-                    "test":"",
-                    "solutions":""
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
                     "type":"gemini",
-                    "test":"",
-                    "solutions":""
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
                     "type":"algorithms",
-                    "test":"",
-                    "solutions":""
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_algorithms_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_algorithms_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
                     "type":"analytic geometry",
-                    "test":"",
-                    "solutions":""
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
                     "type":"logs and exponents",
-                    "test":"",
-                    "solutions":""
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
-                    "type":"",
-                    "test":"",
-                    "solutions":""
+                    "type":"matrices and vectors",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
-                    "type":"",
-                    "test":"",
-                    "solutions":""
+                    "type":"trigonometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
-                    "type":"",
-                    "test":"",
-                    "solutions":""
+                    "type":"applications",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_applications_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_applications_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
-                    "type":"",
-                    "test":"",
-                    "solutions":""
+                    "type":"complex numbers",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
-                    "type":"",
-                    "test":"",
-                    "solutions":""
+                    "type":"equations and inequalities",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2015_-_solutions.pdf"
                 },
                 {
-                    "type":"",
-                    "test":"",
-                    "solutions":""
+                    "type":"school bowl",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2015.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2015_-_solutions.pdf"
+                }
+            ],
+            "2014":[
+                {
+                    "type":"individual",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"ciphering",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"gemini",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"applications",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_applications_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_applications_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"analytic geometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"logs and exponents",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"matrices and vectors",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"trigonometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"math in rides",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_math_in_rides_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_math_in_rides_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"complex numbers",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"equations and inequalities",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2014_-_solutions.pdf"
+                },
+                {
+                    "type":"school bowl",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2014.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2014_-_solutions.pdf"
+                }
+            ],
+            "2013":[
+                {
+                    "type":"individual",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"ciphering",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"gemini",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"sequences and series",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_sequences_&_series_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_sequences_&_series_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"analytic geometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"logs and exponents",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"matrices and vectors",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"trigonometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"area and volumes",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_area_&_volumes_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_area_&_volumes_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"complex numbers",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"equations and inequalities",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"triangles",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_triangles_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_triangles_mu_alpha_theta_national_2013_-_solutions.pdf"
+                },
+                {
+                    "type":"school bowl",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2013.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2013_-_solutions.pdf"
+                }
+            ],
+            "2012":[
+                {
+                    "type":"individual",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"ciphering",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"gemini",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"polar",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_polar_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_polar_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"analytic geometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"logs and exponents",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"matrices and vectors",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"trigonometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"applications",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_applications_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_applications_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"complex numbers",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"equations and inequalities",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2012_-_solutions.pdf"
+                },
+                {
+                    "type":"school bowl",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2012.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2012_-_solutions.pdf"
+                }
+            ],
+            "2011":[
+                {
+                    "type":"individual",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_individual_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"ciphering",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_ciphering_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"gemini",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_gemini_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"conics and coordinate geometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_conics_&_coordinate_geometry_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_conics_&_coordinate_geometry_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"analytic geometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_analytic_geometry_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"logs and exponents",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_logs_&_exponents_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"matrices and vectors",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_matrices_&_vectors_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"trigonometry",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_trigonometry_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"applications",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_applications_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_applications_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"complex numbers",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_complex_numbers_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"equations and inequalities",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_equations_&_inequalities_mu_alpha_theta_national_2011_-_solutions.pdf"
+                },
+                {
+                    "type":"school bowl",
+                    "test":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2011.pdf",
+                    "solutions":"http://www.mualphatheta.org/useruploads/files/alpha_school_bowl_mu_alpha_theta_national_2011_-_solutions.pdf"
                 }
             ]
         },
