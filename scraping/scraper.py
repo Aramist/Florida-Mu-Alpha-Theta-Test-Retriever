@@ -9,6 +9,6 @@ class MAOSpider(scrapy.Spider):
         for anchor in response.css(CSS_SELECTOR):
             yield {
             	'subject': anchor.css('::text').extract_first(),
-                'type': anchor.css('a ::text').extract_first(),
-                'url': anchor.css('a ::attr(href)').extract_first()
+                'type': anchor.css('a ::text').extract(),
+                'url': anchor.css('a ::attr(href)').extract()
             }
