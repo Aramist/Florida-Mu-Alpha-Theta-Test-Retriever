@@ -13,7 +13,7 @@ from PyPDF2 import PdfFileWriter
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen.canvas import Canvas
 
-from requests import Requests
+import requests
 
 from generate import Generator
 
@@ -42,9 +42,21 @@ class TestHandler(object):
         with open(test_path, 'wb') as mao_test_context:
             output.write(mao_test_context)
 
-    def join_tests(self, tests, output = None):
+    def join_tests(self, tests):
+        output = PdfFileWriter()
         for test_identifier in tests:
             test_url, file_name = test_identifier
-            if not path.exists(path.join(getcwd(), 'cached_tests/{}.jpg'.format(file_name))):
-                save_path = path.join(getcwd(), 'cached_tests/{}.jpg'.format(file_name))
-                
+            save_path = path.join(getcwd(), 'cached_tests/{}.pdf'.format(file_name))
+            if not path.exists(save_path):
+                mao_request = requests.get(url)
+                with open(save_path, 'wb') as context:
+                	for data in mao_request.iter_content(chunk_size = 128):
+                		context.write(data)
+                label_test(save_path, file_name)
+            with open(save_path, 'rb') as context:
+            	reader = PdfFileReader(context)
+            	for page in range(reader.numPages()):
+            		output.addPage(reader.getPage(page))
+        out_path = path.join(getcwd(), 'cached_tests/{}.pdf'.format(str(time()).replace('.', ''))
+        with open(out_path, 'wb') as context:
+        	output.write(context)path.join(getcwd(), 'cached_tests/{}.jpg'.format(file_name))
