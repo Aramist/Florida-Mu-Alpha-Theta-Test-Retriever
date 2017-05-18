@@ -1,4 +1,5 @@
 import json
+import re
 import string
 
 processed = list()
@@ -28,11 +29,11 @@ def process(subject, test, url):
     subject = process_subject(subject)
     test = process_type(test)
     url = process_url(url)
-    if ' theta ' in subject:
+    if ' theta ' in ' {} '.format(subject):
         division = 'theta'
-    elif ' alpha ' in subject:
+    elif ' alpha ' in ' {} '.format(subject):
         division = 'alpha'
-    elif ' mu ' in subject:
+    elif ' mu ' in ' {} '.format(subject):
         division = 'mu'
     elif url.count('theta') > 2:
         division = 'theta'
@@ -41,9 +42,14 @@ def process(subject, test, url):
     elif url.count('mu') > 2:
         division = 'mu'
     else:
+        print('could not determine division for {}'.format(subject))
         return
-    year = int(''.join(a for a in url if a in string.digits))
+    matches = re.findall(r'/\d+', url)
+    year = 0
+    if len(matches) > 0:
+        year = int(matches[0][1:])
     if year < 1990 or year > 2020:
+        print('year {} out of range'.format(year))
         return
     if not (subject is None or test is None or url is None):
         processed.append({'division': division, 'subject': subject, 'year': year, 'type': test, 'url': url})
