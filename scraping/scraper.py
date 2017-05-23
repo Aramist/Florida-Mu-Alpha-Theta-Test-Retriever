@@ -5,7 +5,7 @@ class MAOSpider(scrapy.Spider):
     start_urls = [r'http://www.mualphatheta.org/index.php?chapters/national-convention/past-tests']
 
     def parse(self, response):
-        CSS_SELECTOR = 'li ul li'
+        CSS_SELECTOR = 'li ul li a'
         for anchor in response.css(CSS_SELECTOR):
             yield {
             	'subject': anchor.css('::text').extract_first(),
