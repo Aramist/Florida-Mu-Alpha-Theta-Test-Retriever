@@ -14,11 +14,16 @@ def filter(tag):
 
 def run():
 	test_array = list()
-	site = BS(CONTENT, 'html.parser')
+	site = BS(CONTENT, 'html5lib')
 	for anchor in site.select('li > ul > li > a'):
 		great_grandparent_text = a.parent.parent.parent.text
 		if great_grandparent_text.lower() in ['individual', 'gemini', 'interschool test', 'individual tests', 'ciphering']:
-			division = anchor.parent.text.lower()
-			subject = great_grandparent_text.lower()
+			division = anchor.parent.text.lower().replace(':', '').strip()
+			subject = great_grandparent_text.lower().replace(':', '').strip()
+			url = a.attr('href')
+			variant = a.string.lower().strip()
 		else:
-			division = great_grandparent_text.lower()
+			division = great_grandparent_text.lower().replace(':', '').strip()
+			subject = a.parent.text.lower().replace(':', '').strip()
+			url = a.attr('href')
+			variant = a.string.lower().strip()
